@@ -115,14 +115,44 @@
 
 
 </div>
+  <script defer src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <script defer type="text/javascript">
 
-  <script type="text/javascript">
-   function init() {
-    
-   }
-   if (window.addEventListener) window.addEventListener("load", init, false);
-   else if (window.attachEvent) window.attachEvent("onload", init);
-   else window.onload = init;
+    /* IFFY */
+    ;(function (window, document, undefined) {
+      'use strict';
+      // IFFY code
+      console.log('IFFY');
+    })(window, document);
+
+    /* Global Async */
+    function init() {
+      // ASYNC
+      console.log('async');
+    }
+    if (window.addEventListener) window.addEventListener("load", init, false);
+    else if (window.attachEvent) window.attachEvent("onload", init);
+    else window.onload = init;
+
+    /* Revealing Module Pattern */
+    var myThing = window.myThing || [];
+    myThing = (function () {
+      var publicThing = {};
+      var privateMethod = function () {
+        // Code goes here...
+        console.log('RMD');
+      };
+      publicThing.publicMethod = function () {
+        privateMethod();
+        // Code goes here...
+      };
+      return publicThing;
+    })();
+    myThing.publicMethod();
+
+// https://vanillajstoolkit.com/code-snippets
+// https://vanillajstoolkit.com/helpers/
   </script>
+
   </body>
 </html>
