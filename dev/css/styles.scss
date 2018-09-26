@@ -14,6 +14,10 @@ html { box-sizing:border-box; }
 }
 a { color:inherit; text-decoration:none; }
 
+/** VARIABLES **/
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
 /** STYLES **/
 .header {
   display:block;
