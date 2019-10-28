@@ -16,48 +16,9 @@
     <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css"> -->
     <link rel="stylesheet" href="build/css/styles.css" type="text/css">
     <style type="text/css">
-      body { font-size:10px; margin:0; padding:0; } 
-      .wrapper { width:100%; max-width:80em; margin:0 auto; }
-      .header { background-color:black; height:10em; }
 
 
-      .footer { 
-        display:block; 
-        position:fixed; 
-        bottom:0; 
-        left:0;
-        width:100%;
-        height:40px;
-        margin:0 auto;
-        background-color:#000; 
-        color:#fff;
-      }
-      .footer .nav a {
-        display:inline-block;
-        font-size:2em;
-        line-height:2;
-        padding-right:1em;
 
-      }
-      .footer .nav a:first-of-type { padding-left:1em; }
-      @supports (display:grid) {
-        .wrapper { display:grid; grid-gap:4%; grid-template-columns:38% 38% 20%; }
-        .header { grid-column:1/4; grid-row:1; }
-        .main { grid-column:1/3; grid-row:2; }
-        .sidebar { grid-column:3; grid-row:2; }
-        .post-content { grid-column:1/2; grid-row:3; display:flex; }
-        .post-content-1 { flex:46%; margin-right:8%; }
-        .post-content-2 { flex:46%; }
-      }
-
-      @supports not (display:grid) {
-        .header { width:100%; }
-        .main { width:76%; margin-right:4%; float:left; }
-        .content { width:100%; }
-        .post-content-1 { width:46%; display:inline-block; float:left; margin-right:8%; }
-        .post-content-2 { width:46%; display:inline-block; float:left; }
-        .sidebar { width:20%; float:left; }
-      }
     </style>
     <!-- http://ogp.me/ -->
     <meta property="og:title" content="" />
@@ -68,31 +29,135 @@
   <body>
 
 <div class="wrapper">
-  <div class="header">
-    <div class="logo"></div>
-    <div class="nav">
-      <a href="/home">Home</a>
-      <a href="/about">About</a>
-      <a href="/news">News</a>
-      <a href="/contact">Contact</a>
+  <header>
+    <div class="logo">
+      <a href=""><img src="./assets/img/1x1.png" /></a>
     </div>
+    <nav class="primary">
+      <a class="allcaps" href="/home">Home</a>
+      <a class="allcaps" href="/about">About</a>
+      <a class="allcaps" href="/news">News</a>
+      <a class="allcaps" href="/contact">Contact</a>
+    </nav>
+    <div class="menu">
+      <svg class="fill-current" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><title>Menu</title> <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+    </div>
+  </header>
+
+  <div class="content">
+    <form class="form_inline">
+      <fieldset>
+        <!-- <legend>Your Name</legend> -->
+        <div class="row">
+          <div class="label"><label for="name_1">First Name</label></div>
+          <div class="input"><input type="text" name="name_1" id="name_1" value="" placeholder="Jane" /></div>
+        </div>
+        <div class="row">
+            <div class="label"> <label for="name_2">Last Name</label></div>
+          <div class="input"><input type="text" name="name_2" id="name_2" value="" placeholder="Doe" /></div>
+        </div>
+        <div class="row">
+            <div class="label"><label for="email">Email</label></div>
+          <div class="input"><input type="email" name="email_1" id="email_1" value="" placeholder="user@gmail.com" /></div>
+        </div>
+        <div class="row">
+            <div class="label"><label for="submit"></label></div>
+            <div class="input"><input type="submit" class="button allcaps" /></div>
+        </div>
+      </fieldset>
+    </form>
   </div>
 
-  <div class="main">
-    <div class="content">
+</div>
+
+<div class="fullwidth darkbg">
+  <p class="">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek.</p>
+</div>
+
+<div class="wrapper">
+  <div class="content">
+      
+      <p>https://tailwindcss.com/components/buttons/</p>
+
+      <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.
+        <span class="block"><a class="button_small allcaps" href="">text</a></span>
+      </p>
+      
       <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+      <div class="inline-block"><a class="button allcaps" href="">text</a></div>
+      <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+      <a class="button_large button_shadow allcaps" href="">text</a>
+
+      <ul>
+        <li><a href="http://hslpicker.com/">hslpicker</a></li>
+        <li><a href="https://unsplash.com/">unsplash (images)</a></li>
+        <li><a href="https://undraw.co/">undraw (vector)</a></li>
+      </ul>
+
+      <form class="form_inline">
+        <fieldset>
+          <legend>Fruit juice size</legend>
+          <p>
+            <input type="radio" name="size" id="size_1" value="small">
+            <label for="size_1">Small</label>
+          </p>
+          <p>
+            <input type="radio" name="size" id="size_2" value="medium">
+            <label for="size_2">Medium</label>
+          </p>
+          <p>
+            <input type="radio" name="size" id="size_3" value="large">
+            <label for="size_3">Large</label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Your Name</legend>
+
+          <label for="name_1">First Name</label>
+          <input type="text" name="name_1" id="name_1" value="" placeholder="Jane">
+          
+
+          <input type="text" name="name_2" id="name_2" value="" placeholder="Doe">
+            <input type="email" name="email_1" id="email_1" value="" placeholder="user@gmail.com">
+            
+
+      </form>
+
+      <h1>Headline</h1>
+      <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+      <h2>Subhead</h2>
       <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
       <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me? " he thought. It wasn't a dream.</p>
       <p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls.</p>
       <p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops</p>
-    </div>
-    <div class="clearfix post-content">
-      <div class="post-content-1">
-        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
+
+      <div class="cards">
+        <div class="card item">
+          <div class="card image"><img src="https://tailwindcss.com/img/card-top.jpg" /></div>
+          <div class="card text">
+            <h3>The Coldest Sunset</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+          </div>
+          <div class="card meta">
+            <div class="subitem author">
+              <a href=""><img src="https://tailwindcss.com/img/jonathan.jpg" /></a>
+              <div class="">
+                <a href="" class="name">Tom Stoppard</a>
+                <a href="" class="date">Aug 29</a>
+              </div>
+            </div>
+            <div class="subitem tags">
+              <a href="" class="card tag">#photography</a>
+              <a href="" class="card tag">#travel</a>
+              <a href="" class="card tag">#winter</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="post-content-2">
-        <p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath</p>
-      </div>
+
+      <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
+      <p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath</p>
+
     </div>
   </div>
 
@@ -114,15 +179,43 @@
   </div>
 
 
-</div>
+
   <script defer src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
   <script defer type="text/javascript">
+
+function setup_nav() {
+  //https://codepen.io/escherina/pen/pyxYqz
+  var nav = document.querySelector("nav.primary"),
+      navToggle = document.querySelector(".menu");
+  if (navToggle) {
+    navToggle.addEventListener("click", function(e) {
+      if (nav.className == "open") {
+        nav.className = "primary";
+      } else {
+        nav.className = "open";
+      }
+      e.preventDefault();
+    }, false);
+  }
+  /* Any click outside of the nav element will close the menu if it's open */
+  var specifiedElement = document.querySelector('div.menu');
+  document.addEventListener('click', function(event) {
+    var isClickInside = specifiedElement.contains(event.target);
+    if (!isClickInside && nav.className == "open") {
+      nav.className = "primary";
+    } 
+  });
+}
 
     /* IFFY */
     ;(function (window, document, undefined) {
       'use strict';
       // IFFY code
       console.log('IFFY');
+      setup_nav();
+
+
+
     })(window, document);
 
     /* Global Async */

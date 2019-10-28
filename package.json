@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass ./dev/css/ -o ./build/css/ -w -r --source-map-embed --source-map-contents --output-style expanded | node-sass ./dev/css/styles.scss ./build/css/styles.min.css -w --output-style compressed",
     "build-css": "node-sass --include-path scss dev/css/styles.scss build/css/styles.css",
     "build-js": "webpack"
   },

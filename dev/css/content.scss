@@ -1,0 +1,12 @@
+body { font-family: $font-stack; line-height:1; }
+h1 { font-size: $font_large; }
+h2 { font-size: $font_small; }
+p { font-size: $font_medium; line-height:1.5; }
+
+.content { 
+    p { 
+        padding:0 $bv_2;
+    }
+
+
+}
