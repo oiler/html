@@ -1,0 +1,31 @@
+// SPACING, page 63
+// https://www.dropbox.com/s/ebo7fi81ja7qqk9/Screenshot%202019-08-28%2022.37.36.png?dl=0
+$bv_d25:$base_value*0.25;
+$bv_d5:$base_value*0.5;
+$bv_d75:$base_value*0.75;
+$bv_1:$base_value;
+$bv_1d5:$base_value*1.5;
+$bv_2:$base_value*2;
+$bv_3:$base_value*3;
+$bv_4:$base_value*4;
+$bv_6:$base_value*6;
+$bv_8:$base_value*8;
+$bv_12:$base_value*12;
+$bv_16:$base_value*16;
+$bv_24:$base_value*24;
+$bv_32:$base_value*32;
+$bv_40:$base_value*40;
+$bv_48:$base_value*48;
+
+// SIZING, page 91
+$font_xsmall: $base_value*0.75; //12px;
+$font_small: $base_value*0.875; //14px;
+$font_size: $base_value; //16px;
+$font_medium: $base_value*1.125; //18px;
+$font_xmedium: $base_value*1.25; //20px;
+$font_large: $base_value*1.5; //24px;
+$font_xlarge: $base_value*1.875; //30px;
+$font_xxlarge: $base_value*2.25; //36px;
+$font_giant: $base_value*3; //48px;
+$font_xgiant: $base_value*3.75; //60px;
+$font_xxgiant: $base_value*4.5; //72px;
