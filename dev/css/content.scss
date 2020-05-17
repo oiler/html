@@ -1,12 +1,12 @@
-body { font-family: $font-stack; line-height:1; }
-h1 { font-size: $font_large; }
-h2 { font-size: $font_small; }
-p { font-size: $font_medium; line-height:1.5; }
+body { font-family: $font-text; line-height:1; }
 
 .content { 
     p { 
+        margin-bottom:$bv_1;
         padding:0 $bv_2;
+        a:link { color:$action_primary; }
+        a:visited { color:$action_primary; }
+        a:hover { color:$action_secondary; }
+        a:visited { color:$action_primary;  }
     }
-
-
 }

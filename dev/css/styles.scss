@@ -1,24 +1,31 @@
-/** SETUP **/
+/** RESET **/
+@import 'base/normalize';
+
+/** BASE **/
 @import 'base/variables';
 @import 'base/mixins';
-@import 'base/normalize';
+@import 'base/colors';
+@import 'base/fonts';
 @import 'base/utilities';
+@import 'base/text';
 
 /** CONFIG **/
+body { font-size:10px; }
 .wrapper { width:100%; margin:0 auto; max-width:$max_width; }
-.content { width:100%; margin:0 auto; max-width:$text_max_width; }
+.content { 
+    width:100%; margin:0 auto; max-width:$text_max_width; 
+    &.wide { max-width:$wide_max_width; }
+    &.narrow { max-width:$narrow_max_width; }
+}
 @import 'base/sizespaces';
-@import 'base/colors';
-
 
 /** COMPONENTS **/
-@import 'components/buttons';
-@import 'components/cards';
-@import 'components/forms';
+// @import 'components/buttons';
+// @import 'components/cards';
+// @import 'components/forms';
 
 /** LAYOUT **/
 @import 'header';
 @import 'content';
 @import 'desktop';
 
-// general or special

@@ -1,0 +1,14 @@
+// @font-face {
+//     font-family: "BerninaSans-Compressed";
+//     src: url('../fonts/bernino/BerninoSans-Web-CompressedBold.eot'); /* IE9 Compat Modes */
+//     src: url('../fonts/bernino/BerninoSans-Web-CompressedBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//          url('../fonts/bernino/BerninoSans-Web-CompressedBold.woff2') format('woff2'), /* Super Modern Browsers */
+//          url('../fonts/bernino/BerninoSans-Web-CompressedBold.woff') format('woff'), /* Pretty Modern Browsers */
+//          url('../fonts/bernino/BerninoSans-Web-CompressedBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+//          url('../fonts/bernino/BerninoSans-Web-CompressedBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+//     font-weight: bold;
+//   }
+  
+$font_head: "BerninaSans-Compressed", sans-serif;
+$font_text: "PT Serif", serif;
+/* PT Serif google font is loaded in ./inc/functions/pagetype-css.php */

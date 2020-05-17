@@ -1,12 +1,20 @@
-$gray_100:#f7fafc;
-$gray_200:#edf2f7;
-$gray_300:#e2e8f0;
-$gray_400:#cbd5e0;
-$gray_500:#a0aec0;
-$gray_600:#718096;
-$gray_700:#4a5568;
-$gray_800:#2d3748;
-$gray_900:#1a202c;
+// http://hslpicker.com/
 
-$light:#ffffff;
-$dark:#000000;
+$blue:     hsla(196, 100%, 47%, 1); //#00aeef
+$black:    hsla(0, 0%, 0%, 1); //#000000
+$orange:   hsla(38, 100%, 50%, 1); //#ffa100
+$red:      hsla(358, 85%, 52%, 1); //#ed1c24
+$white:    hsla(0, 100%, 100%, 1); //#ffffff
+
+$gray_100: hsla(204, 45%, 98%, 1); //#f7fafc
+$gray_200: hsla(210, 38%, 95%, 1); //#edf2f7
+$gray_300: hsla(214, 32%, 91%, 1); //#e2e8f0
+$gray_400: hsla(211, 25%, 84%, 1); //#cbd5e0
+$gray_500: hsla(214, 20%, 69%, 1); //#a0aec0
+$gray_600: hsla(216, 15%, 52%, 1); //#718096;
+$gray_700: hsla(218, 17%, 35%, 1); //#4a5568;
+$gray_800: hsla(218, 23%, 23%, 1); //#2d3748;
+$gray_900: hsla(220, 26%, 14%, 1); //#1a202c;
+
+$action_primary: hsla(358, 85%, 52%, 1); //#ed1c24
+$action_secondary: hsla(196, 100%, 47%, 1); //#00aeef

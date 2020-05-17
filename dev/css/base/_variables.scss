@@ -1,24 +1,31 @@
+/** WIDTHS **/
 $max_width:61.25rem;
-$text_max_width:40rem;
+$text_max_width:50rem;
+$wide_max_width:60rem;
+$narrow_max_width:40rem;
+$device_mobile: 600px;
+$device_tablet: 800px;
+$device_desktop: 1024px;
 
 /** FONTS **/
-$font-stack: Helvetica, sans-serif;
-$base_value: 16px;
-/** COLORS **/
-$primary-color: #333;
+//$font-stack: Helvetica, sans-serif;
+$base_value: 0.625rem;
+$bv: 0.625rem;
 
-$background               : white;
-//$primary-color            : #0366EE                                   ;
-$secondary-color          : #29de7d                                   ;
-$accent-color             : #cdcdcd                                   ;
-$alternate-background     : #fafafa                                   ;
-$alternate-color          : #404040                                   ;
-$link-color               : $primary-color                            ;
-$link-hover-color         : darken($link-color, 15%)                  ;
-$highlight                : #ffeea8                                   ;
-$error                    : #D33C40                                   ;
-$success                  : #29de7d                                   ;
-$bq-border                : 16px solid #f0f0f0                        ;
-$border-color             : #dedede;
-$border-radius            : 4px ;
-$font-color: #404040;
+/** COLORS **/
+// $primary-color: #333;
+// $background               : white;
+// //$primary-color            : #0366EE                                   ;
+// $secondary-color          : #29de7d                                   ;
+// $accent-color             : #cdcdcd                                   ;
+// $alternate-background     : #fafafa                                   ;
+// $alternate-color          : #404040                                   ;
+// $link-color               : $primary-color                            ;
+// $link-hover-color         : darken($link-color, 15%)                  ;
+// $highlight                : #ffeea8                                   ;
+// $error                    : #D33C40                                   ;
+// $success                  : #29de7d                                   ;
+// $bq-border                : 16px solid #f0f0f0                        ;
+// $border-color             : #dedede;
+// $border-radius            : 4px ;
+// $font-color: #404040;

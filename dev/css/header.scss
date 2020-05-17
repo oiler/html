@@ -26,7 +26,7 @@ header {
         margin-top:$bv_2;
         a {
             font-size: $font_small;
-            color:$light;
+            color:$white;
             margin-right:$bv_d75;
             margin-bottom:$bv_d75;
         }
@@ -35,9 +35,9 @@ header {
         order:1;
         flex-basis:32px;
         align-self:flex-end;
-        color:$light;
+        color:$white;
         padding:7px 16px;
-        border:1px solid $light;
+        border:1px solid $white;
         .fill-current { fill: currentColor!important;}
         svg { width:$bv_1; height:$bv_1; }
     }
