@@ -1,5 +1,5 @@
 /** RESET **/
-@import 'base/normalize';
+@import 'vendor/normalize';
 
 /** BASE **/
 @import 'base/variables';
@@ -10,13 +10,6 @@
 @import 'base/text';
 
 /** CONFIG **/
-body { font-size:10px; }
-.wrapper { width:100%; margin:0 auto; max-width:$max_width; }
-.content { 
-    width:100%; margin:0 auto; max-width:$text_max_width; 
-    &.wide { max-width:$wide_max_width; }
-    &.narrow { max-width:$narrow_max_width; }
-}
 @import 'base/sizespaces';
 
 /** COMPONENTS **/
@@ -25,7 +18,8 @@ body { font-size:10px; }
 // @import 'components/forms';
 
 /** LAYOUT **/
-@import 'header';
-@import 'content';
-@import 'desktop';
-
+@import 'layout/mobile';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/content';
+@import 'layout/desktop';
