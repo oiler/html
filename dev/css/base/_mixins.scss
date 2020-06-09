@@ -1,0 +1,20 @@
+// Media query for mobile first layout 
+@mixin small-breakpoint {
+    @media only screen and (min-width: $device_mobile) {
+      @content;
+    } 
+  }  
+  
+  // Break on tablet
+  @mixin medium-breakpoint {
+    @media only screen and (min-width: $device_tablet) {
+      @content;
+    } 
+  }
+  
+  // Break on desktop
+  @mixin large-breakpoint {
+    @media only screen and (min-width: $device_desktop) {
+      @content;
+    }
+  }

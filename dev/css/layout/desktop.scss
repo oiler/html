@@ -1,0 +1,22 @@
+@include large-breakpoint {
+    body { background-color: #fff; }
+        
+    // CARDS
+    .fullwidth {
+        p {
+            padding:$bv_3 0;
+        }
+    }
+
+    // FORMS
+    .form_inline { border:1px solid $gray_200; }
+
+
+    // CONTENT
+    // .content { 
+    //     p { 
+    //         padding:0;
+    //     }
+    // }
+
+}
