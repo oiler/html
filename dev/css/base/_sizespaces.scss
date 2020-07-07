@@ -3,6 +3,7 @@
 // https://docs.google.com/spreadsheets/d/1HB7pDCg3q4KSIzi_-AWppEJXuVwwPz-W4XOnRTFN8Ro/edit?usp=sharing
 $bv_d25:$base_value*0.25;
 $bv_d5:$base_value*0.5;
+$bv_d66:$base_value*0.666666666666;
 $bv_d75:$base_value*0.75;
 $bv_1:$base_value;
 $bv_1d5:$base_value*1.5;
@@ -19,14 +20,14 @@ $bv_40:$base_value*40;
 $bv_48:$base_value*48;
 
 // SIZING, page 91
-$font_xsmall: $base_value*0.75; //12px;
-$font_small: $base_value*0.875; //14px;
-$font_size: $base_value; //16px;
-$font_medium: $base_value*1.125; //18px;
-$font_xmedium: $base_value*1.25; //20px;
-$font_large: $base_value*1.5; //24px;
-$font_xlarge: $base_value*1.875; //30px;
-$font_xxlarge: $base_value*2.25; //36px;
-$font_giant: $base_value*3; //48px;
-$font_xgiant: $base_value*3.75; //60px;
-$font_xxgiant: $base_value*4.5; //72px;
+$font_xsmall:    $base_value*0.750;  //12px;
+$font_small:     $base_value*0.875;  //14px;
+$font_size:      $base_value*1.00;   //16px;
+$font_medium:    $base_value*1.125;  //18px;
+$font_xmedium:   $base_value*1.25;   //20px;
+$font_large:     $base_value*1.50;   //24px;
+$font_xlarge:    $base_value*1.875;  //30px;
+$font_xxlarge:   $base_value*2.25;   //36px;
+$font_giant:     $base_value*3.00;   //48px;
+$font_xgiant:    $base_value*3.75;   //60px;
+$font_xxgiant:   $base_value*4.50;    //72px;

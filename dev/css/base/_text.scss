@@ -1,3 +1,6 @@
+//BODY
+html, body { font-size:1rem; }
+
 //HEADERS
 h1, h2, h3, h4, h5, h6 {
     font-family: $font_head;
@@ -33,7 +36,6 @@ p, ol, ul {
     letter-spacing: normal;
     margin:0;
     padding:0;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 1.25rem;
+    line-height: 1.35;
 }
-
