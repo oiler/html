@@ -1,13 +1,10 @@
-// http://hslpicker.com/
+//http://hslpicker.com/
 
 $white:        hsla(360, 100%, 100%, 1); //#fff
 $black:        hsla(0, 0%, 0%, 1); //#000000
 $red:          hsla(0, 100%, 50%, 1); //#ff0000
 $blue:         hsla(240, 100%, 50%, 1); //#0000ff
 $green:        hsla(120, 100%, 25%, 1); //#008000
-
-$action_primary: hsla(358, 85%, 52%, 1); //#ed1c24
-$action_secondary: hsla(196, 100%, 47%, 1); //#00aeef
 
 $gray_100:     hsla(204, 45%, 98%, 1); //#f7fafc
 $gray_200:     hsla(210, 38%, 95%, 1); //#edf2f7
@@ -38,9 +35,9 @@ $neutral_700: hsla(213, 11%, 48%, 1); //#6e7a89
 $neutral_800: hsla(214, 16%, 30%, 1); //#404b59
 $neutral_900: hsla(215, 22%, 17%, 1); //#212934
 
-$neutral_shades: (
-    100:$neutral_100,200:$neutral_200,300:$neutral_100,400:$neutral_100,500:$neutral_100,
-    600:$neutral_100,700:$neutral_100,800:$neutral_100,900:$neutral_100
+$neutral_shades: ( 
+    100:$neutral_100,200:$neutral_200,300:$neutral_300,400:$neutral_400,500:$neutral_500,
+    600:$neutral_600,700:$neutral_700,800:$neutral_800,900:$neutral_900
 );
 @each $shade, $color in $neutral_shades {
     .neutral_#{$shade} { color: $color; }
@@ -56,3 +53,37 @@ $neutral_shades: (
 // .neutral_700 { color: $neutral_700; } .bg_neutral_700 { background-color: $neutral_700; }
 // .neutral_800 { color: $neutral_800; } .bg_neutral_800 { background-color: $neutral_800; }
 // .neutral_900 { color: $neutral_900; } .bg_neutral_900 { background-color: $neutral_900; }
+
+
+$wb_100:     hsla(0, 0%, 94%, 1); //#f0f0f0
+$wb_200:     hsla(0, 0%, 85%, 1); //#d9d9d9
+$wb_300:     hsla(0, 0%, 79%, 1); //#c8c8c8
+$wb_500:     hsla(0, 0%, 72%, 1); //#b7b7b7
+$wb_700:     hsla(0, 0%, 65%, 1); //#a6a6a6
+$wb_800:     hsla(0, 0%, 58%, 1); //#949494
+$wb_900:     hsla(0, 0%, 50%, 1); //#808080
+$wb_shades: (
+    100:$wb_100,200:$wb_200,300:$wb_300,500:$wb_500,
+    700:$wb_700,800:$wb_800,900:$wb_900
+);
+@each $shade, $color in $wb_shades {
+    .wb_#{$shade} { color: $color; }
+    .bg_wb_#{$shade} { background-color: $color; }
+} 
+
+$bw_100:     hsla(0, 0%, 44%, 1); //#707070
+$bw_200:     hsla(0, 0%, 38%, 1); //#616161
+$bw_300:     hsla(0, 0%, 32%, 1); //#525252
+$bw_500:     hsla(0, 0%, 26%, 1); //#424242
+$bw_700:     hsla(0, 0%, 20%, 1); //#333333
+$bw_800:     hsla(0, 0%, 16%, 1); //#292929
+$bw_900:     hsla(0, 0%, 9%, 1); //#171717
+$bw_shades: (
+    100:$bw_100,200:$bw_200,300:$bw_300,500:$bw_500,
+    700:$bw_700,800:$bw_800,900:$bw_900
+);
+@each $shade, $color in $bw_shades {
+    .bw_#{$shade} { color: $color; }
+    .bg_bw_#{$shade} { background-color: $color; }
+} 
+

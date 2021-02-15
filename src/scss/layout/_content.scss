@@ -1,0 +1,31 @@
+body { font-family: $font-text; line-height:1; }
+
+.wrapper { width:100%; margin:0 auto; max-width:100%; }
+.content { 
+    width:100%;
+    margin:0 auto;
+    padding:0 2rem;
+    &.wide { 
+        p, ol, ul,
+        h1, h2, h3, h4, h5 { max-width:$reading_max_wide; margin-left:auto; margin-right:auto }
+    }
+    &.narrow { 
+        p, ol, ul,
+        h1, h2, h3, h4, h5 { max-width:$reading_max_narrow; margin-left:auto; margin-right:auto }
+    }
+    &.section { padding-top:4rem; padding-bottom:4rem; }
+    ul > li, ol > li {
+        margin-left:1rem;
+    }
+    ol > li {
+        padding-left:0.5rem;
+    }
+    img.inline, 
+    img.inline-left,
+    img.inline-right { width:100%; margin:1rem 0; }
+    a:link { color:$action_primary; }
+    a:visited { color:$action_primary; }
+    a:hover { color:$action_secondary; }
+    a:visited { color:$action_primary;  }
+
+}

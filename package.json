@@ -1,13 +1,13 @@
 {
   "name": "html",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass ./src/scss/ -o ./build/css/ -w -r --source-map-embed --source-map-contents --output-style expanded | node-sass ./src/scss/styles.scss ./build/css/styles.min.css -w --output-style compressed",
     "watch-css": "f=${f:-styles}; node-sass ./src/scss/ -o ./build/css/ -w -r --source-map-embed --source-map-contents --output-style expanded | node-sass ./src/scss/$f.scss ./build/css/$f.min.css -w --output-style compressed",
-    "build-css": "f=${f:-styles}; node-sass --include-path scss src/scss/$f.scss build/css/$f.css --output-style compact",
+    "build-css": "f=${f:-styles}; node-sass --include-path scss src/scss/$f.scss build/css/$f.css --output-style minified",
     "watch-js": "webpack --watch",
     "build-js": "webpack"
   },

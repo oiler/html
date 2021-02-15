@@ -1,0 +1,42 @@
+//http://hslpicker.com/
+
+$action_primary: hsla(0, 100%, 50%, 1); //#ff0000
+$action_secondary: hsla(240, 100%, 50%, 1); //#0000ff
+
+$your_blue_100:     hsla(215, 39%, 94%, 1);
+$your_blue_200:     hsla(215, 34%, 82%, 1);
+$your_blue_300:     hsla(215, 33%, 55%, 1);
+$your_blue_400:     hsla(215, 46%, 34%, 1);
+$your_blue_500:     hsla(215, 89%, 14%, 1); //#041E42
+$your_blue_600:     hsla(215, 92%, 11%, 1);
+$your_blue_700:     hsla(215, 95%, 8%, 1);
+$your_blue_800:     hsla(215, 98%, 5%, 1);
+$your_blue_900:     hsla(215, 99%, 2%, 1);
+
+$your_blue_shades: (
+    100:$your_blue_100,200:$your_blue_200,300:$your_blue_300,400:$your_blue_400,500:$your_blue_500,
+    600:$your_blue_600,700:$your_blue_700,800:$your_blue_800,900:$your_blue_900
+);
+@each $shade, $color in $your_blue_shades {
+    .your_blue_#{$shade} { color: $color; }
+    .bg_your_blue_#{$shade} { background-color: $color; }
+}
+
+$your_orange_100:     hsla(18, 80%, 94%, 1);
+$your_orange_200:     hsla(18, 80%, 80%, 1);
+$your_orange_300:     hsla(18, 80%, 70%, 1);
+$your_orange_400:     hsla(18, 80%, 60%, 1);
+$your_orange_500:     hsla(18, 100%, 50%, 1); //#FF4C00
+$your_orange_600:     hsla(18, 99%, 40%, 1);
+$your_orange_700:     hsla(18, 99%, 30%, 1);
+$your_orange_800:     hsla(18, 86%, 17%, 1);
+$your_orange_900:     hsla(18, 80%, 12, 1);
+
+$your_orange_shades: (
+    100:$your_orange_100,200:$your_orange_200,300:$your_orange_300,400:$your_orange_400,500:$your_orange_500,
+    600:$your_orange_600,700:$your_orange_700,800:$your_orange_800,900:$your_orange_900
+);
+@each $shade, $color in $your_orange_shades {
+    .your_orange_#{$shade} { color: $color; }
+    .bg_your_orange_#{$shade} { background-color: $color; }
+} 
