@@ -28,30 +28,11 @@
 </head>
 <body>
 
-<style>
-    body { margin:0; padding:0; position:relative; }
-    header {
-        display:flex;
-        flex-wrap:nowrap;
-        height:48px;
-        background-color:black;
-        color:white;
-        margin:0;
-        padding:0;
-    }
-    h1 { 
-        flex:1;
-        font-size:2rem;
-        margin:0;
-        padding:0;
-    }
-</style>
-
+<div class="wrapper">
 <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="32" viewBox="0 0 128 32">
     <defs>
     <g id="icon-expand">
         <path class="menu-open menu-opened" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        
     </g>
     <g id="icon-contract">
         <path class="menu-close" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -59,105 +40,143 @@
     </defs>
 </svg>
 
-  <header>
-    <h1>Page Title</h1>
-    <div class="menu-icon" data-menu="primary">
-      <svg class="icon icon-expand" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><use xlink:href="#icon-expand"></svg>
-      <svg class="icon icon-contract" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><use xlink:href="#icon-contract"></use></svg>
-    </div>
-  </header>
-  <nav class="menu" id="primary" data-menu_state="closed">
-      <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li class="subnav" data-menu="contact">
-              <a class="subnav_title" href="#">Contact</a>
-              <ul class="closed" id="contact" data-menu_state="closed">
-                  <li><a href="#">subitem 1</a></li>
-                  <li><a href="#">subitem 2</a></li>
-                  <li><a href="#">subitem 3</a></li>
-                  <li><a href="#">subitem 4</a></li>
-              </ul>
-          </li>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Item 2</a></li>
-          <li><a href="#">Item 3</a></li>
-          <li><a href="#">Item 4</a></li>
-          <li><a href="#">Item 5</a></li>
-          <li><a href="#">Item 6</a></li>
-          <li><a href="#">Item 7</a></li>
-          <li><a href="#">Item 8</a></li>
-          <li><a href="#">Item 9</a></li>
-          <li><a href="#">Item 10</a></li>
+<header>
+  <h1>Page Title</h1>
+  <div class="menu-icon closed" data-menu="primary_nav" id="primary_nav_icon">
+    <svg class="icon icon-expand" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><use xlink:href="#icon-expand"></svg>
+    <svg class="icon icon-contract" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><use xlink:href="#icon-contract"></use></svg>
+  </div>
+</header>
+<nav class="menu" id="primary_nav" data-menu_state="closed">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="subnav" data-menu="contact">
+        <a class="subnav_title" href="#">Contact</a>
+        <ul class="closed" id="contact" data-menu_state="closed">
+            <li><a href="#">subitem 1</a></li>
+            <li><a href="#">subitem 2</a></li>
+            <li><a href="#">subitem 3</a></li>
+            <li><a href="#">subitem 4</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Item 1</a></li>
+    <li><a href="#">Item 2</a></li>
+    <li><a href="#">Item 3</a></li>
+    <li><a href="#">Item 4</a></li>
+    <!-- <li><a href="#">Item 5</a></li>
+    <li><a href="#">Item 6</a></li>
+    <li><a href="#">Item 7</a></li>
+    <li><a href="#">Item 8</a></li>
+    <li><a href="#">Item 9</a></li>
+    <li><a href="#">Item 10</a></li> -->
+  </ul>
+</nav>
 
-      </ul>
-    </nav>
+<main>
+  <section class="content">
+    <p>Nunc libero velit, congue at suscipit ut, pharetra sit amet felis. Fusce ullamcorper justo eget est laoreet, quis facilisis felis vehicula. Vivamus eu iaculis risus. Sed vestibulum velit sit amet nisl pellentesque ultrices. Integer pellentesque est id nunc congue fringilla. Cras non risus nec dui iaculis interdum ac a sem. Aenean volutpat ipsum et augue mattis imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus eleifend quam a finibus interdum. Integer placerat orci odio, molestie vulputate magna volutpat eget.</p>
+    <p>Mauris laoreet elit non sollicitudin congue. Nunc malesuada ultrices ipsum, vel tempus enim semper et. Aenean sit amet purus massa. Nulla pellentesque odio vitae rhoncus commodo. Duis non felis leo. Maecenas ac fermentum erat. Donec mattis non purus et convallis. Maecenas ac dui mollis, hendrerit nisi eget, congue sapien. Aliquam cursus, mi ut consectetur cursus, eros leo eleifend nulla, ut imperdiet enim massa fermentum nisi. Pellentesque lacinia massa odio, id mattis ex dapibus eget. Ut viverra lacus sem, eu pretium est pellentesque a.</p>
+    <p>Fusce pharetra in ex vitae blandit. Suspendisse quis mauris eu tellus accumsan rhoncus. Morbi nec fermentum erat. Integer aliquam metus vel ex lacinia, at venenatis est posuere. Maecenas sit amet risus at massa faucibus consectetur a at risus. Donec auctor nulla massa, in ornare dolor finibus at. Fusce cursus mauris quis nisi laoreet tincidunt. Nullam malesuada urna nisl, a aliquet leo laoreet non. Donec sed leo neque. Vivamus eget diam eu nibh condimentum congue porta a arcu. Donec semper mauris quis urna sodales mattis. Nam fermentum posuere ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris consequat consequat nisi eu placerat. Duis a suscipit tellus. Suspendisse interdum orci convallis ex pellentesque, vitae sagittis lorem dictum.</p>
+    <p>Fusce venenatis orci sed vulputate pellentesque. Proin egestas, elit at sagittis tempor, sem elit vehicula lectus, vel gravida justo nibh sit amet felis. Aliquam tincidunt vitae leo ac ullamcorper. Maecenas sodales est auctor odio porttitor egestas. Aliquam mauris orci, consectetur id maximus at, viverra sit amet purus. Morbi at lobortis enim. Etiam id orci tortor. Pellentesque ut felis eu risus placerat venenatis. Mauris fermentum quam a arcu consectetur porta. Sed vehicula orci sed elit dictum pellentesque. Praesent cursus sed justo id aliquam. Suspendisse scelerisque efficitur ante et placerat. Morbi imperdiet tellus tempor risus vestibulum ornare. Cras blandit nisi turpis, non rhoncus ex sollicitudin vitae.</p>
+    <p>Praesent eu fringilla leo, vel pretium nisi. In tincidunt sed sem non ullamcorper. Nullam at urna et nisl sollicitudin aliquet. Maecenas sed metus blandit, commodo justo a, ultricies mi. Phasellus nec ultricies sapien. Ut semper felis velit, vel luctus leo tristique at. Suspendisse est neque, vulputate nec condimentum eu, porta sed libero. Curabitur eget posuere lacus.</p>
+    <p>Duis ut fringilla arcu. In odio velit, maximus accumsan lobortis rhoncus, tristique ut ante. Aliquam erat volutpat. Proin ante justo, scelerisque a ullamcorper et, lobortis sagittis urna. Duis a ante purus. Curabitur finibus lacinia malesuada. Cras felis odio, ornare et accumsan eget, ornare vel nibh. Vestibulum lorem velit, faucibus vitae maximus quis, facilisis id nibh. Aliquam congue commodo congue. Integer venenatis in purus nec iaculis. Aliquam vehicula auctor dignissim.</p>
+    <p>Praesent blandit nisi at pretium malesuada. Maecenas non arcu molestie, scelerisque risus eget, ultricies sapien. Aliquam tellus libero, faucibus in consectetur ut, malesuada id erat. Phasellus commodo, dui accumsan faucibus malesuada, mauris neque porttitor nulla, tristique accumsan dui ex vitae nisi. Curabitur lobortis massa sit amet nisl vestibulum tempus. Sed ultricies volutpat bibendum. Curabitur sagittis ultricies ligula, id porta orci congue venenatis.</p>
+    <p>Praesent eget posuere lorem. Etiam et augue at nunc sagittis tempor. Praesent pretium, nulla id sollicitudin posuere, tortor felis tempor sapien, vitae dapibus velit enim sit amet diam. Nunc convallis lobortis lorem et tempus. Aenean condimentum massa in nibh suscipit, in tristique lorem facilisis. Sed tincidunt, tortor ac pellentesque ultricies, sem quam mollis nibh, non tincidunt felis risus ut mi. Sed nec lacus lobortis, consequat metus eleifend, congue odio. Praesent malesuada tortor sit amet iaculis feugiat. Curabitur non odio justo. Morbi hendrerit porttitor dolor, id consequat sem consequat sed. Suspendisse porttitor turpis urna, ut euismod est elementum vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse id posuere odio, at maximus urna. Praesent augue purus, gravida non aliquam non, eleifend sed tortor.</p>
+    <p>Cras feugiat ex lacus, vitae pulvinar erat auctor ultrices. In eu lobortis eros. Ut porta orci quis lacus dignissim fringilla. Mauris luctus augue vel condimentum molestie. Donec in tortor pellentesque, vulputate ex vitae, laoreet urna. Donec molestie sodales elit id elementum. Morbi condimentum eleifend massa et sollicitudin. Sed lobortis iaculis leo tristique pulvinar. Sed sed tortor et diam egestas accumsan vel eget mi. Curabitur vel tortor sed velit faucibus tincidunt.</p>
+    <p>Nulla sed cursus quam. In facilisis elementum libero, at scelerisque velit condimentum sed. Aliquam consectetur nibh sit amet nisi porta, id tincidunt metus varius. Suspendisse nulla quam, elementum vel ipsum sit amet, viverra tincidunt sem. Maecenas scelerisque tristique venenatis. Cras porta sagittis quam, at tristique ex auctor et. Curabitur non accumsan nibh, et vehicula libero.</p>
+    <p>Mauris consequat euismod dui eget maximus. Suspendisse purus velit, viverra quis nisi in, gravida lacinia diam. Nulla eu eros egestas, convallis tortor vitae, mattis nisi. Nullam nec ultricies nibh. Quisque mattis dictum velit, ac porttitor lorem tristique a. Ut facilisis at velit vitae posuere. Ut a mi condimentum, facilisis lectus id, lacinia mauris. Proin ante enim, vestibulum ac pellentesque sit amet, efficitur a nulla. Mauris elementum eu leo vitae laoreet. Quisque nisi velit, volutpat ac diam sed, gravida porttitor arcu.</p>
+    <p>Pellentesque sodales nisi et tortor pretium, vel dictum odio sodales. Fusce aliquet, justo in efficitur blandit, risus velit consectetur ipsum, eget lacinia massa eros vel arcu. Donec fringilla enim diam, mattis blandit nulla sollicitudin non. Integer sit amet egestas est. Fusce vitae aliquam turpis. Sed malesuada ornare consequat. Praesent semper id dui ac aliquam. Duis rutrum euismod tincidunt. Nunc condimentum tortor sit amet sem gravida viverra.</p>
+    <p>Aenean varius turpis sit amet ante dignissim, in vulputate leo venenatis. Etiam id leo nulla. Etiam varius lorem ut tincidunt vestibulum. Praesent risus lectus, lobortis a enim sit amet, convallis facilisis sem. Maecenas ut euismod urna. Nam aliquam in odio at tempor. Curabitur sit amet fringilla ex, id condimentum sapien. Nulla imperdiet convallis leo, consequat lobortis nulla blandit eget. Fusce sit amet odio odio. Maecenas fringilla rhoncus elit, et iaculis metus sagittis ut. Sed ac dui molestie, accumsan nulla vitae, luctus leo. Etiam scelerisque justo non mauris porta vestibulum sed in nisl. Sed lorem lectus, maximus eget diam vel, blandit consectetur lorem.</p>
+    <p>Aenean sed risus eget mauris commodo bibendum at ut risus. Donec viverra et justo eu maximus. Phasellus posuere tempor lorem, eu finibus tellus rhoncus lacinia. Proin et tempus lectus, eget vehicula tellus. Curabitur rutrum magna at dui vestibulum tristique. Duis facilisis faucibus ullamcorper. Integer sit amet risus sit amet mi tempor gravida.</p>
+    <p>Pellentesque in lacus nec magna sollicitudin bibendum at scelerisque odio. Integer elementum purus eget enim volutpat, a hendrerit massa iaculis. Ut convallis vel sem non rutrum. Pellentesque tincidunt luctus metus a interdum. Aliquam commodo felis eu auctor tempus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer pellentesque elit id porttitor consequat.</p>
+    <p>Nam ultricies mi nec arcu dapibus, vitae ultricies augue fringilla. Aliquam malesuada dapibus augue, vel rhoncus augue euismod a. Nullam sed magna a risus maximus molestie. Aenean libero nisl, elementum non nisi id, egestas pulvinar lacus. Etiam malesuada lorem nec eros rhoncus, ultrices blandit lacus consectetur. Praesent a libero velit. Maecenas pellentesque suscipit sem in elementum. Morbi pharetra ac risus eget maximus. Vestibulum quis nibh tellus. Curabitur convallis dignissim nulla. Pellentesque nisl quam, tristique et lobortis in, tempor vehicula libero. Suspendisse a sapien nec mauris commodo aliquam. Morbi pellentesque ullamcorper malesuada. Donec vulputate luctus porta. Integer vel leo sagittis, scelerisque leo ut, aliquam dui. Vestibulum at risus ut tortor suscipit feugiat non eu elit.</p>
+    <p>Mauris quis tincidunt magna. Etiam posuere nibh felis, a mattis libero pretium eget. Vivamus lectus odio, laoreet sed est ac, hendrerit efficitur metus. Aenean rutrum ipsum ex, sed pretium nulla convallis ut. Curabitur justo orci, efficitur vel turpis a, lobortis luctus nibh. Ut aliquam ex sed diam semper, at pulvinar quam vehicula. Phasellus in leo et sem vestibulum suscipit pharetra ac sem. Maecenas id sem commodo, laoreet orci sed, tincidunt diam. Phasellus blandit laoreet mi a pulvinar. Etiam eleifend leo vel massa feugiat vulputate.</p>
+    <p>Aliquam enim mauris, bibendum vel est ut, mollis elementum leo. Aliquam ullamcorper metus odio, in scelerisque lacus rutrum vel. Etiam feugiat finibus magna, sed rutrum nulla. Etiam molestie id tortor a imperdiet. Sed bibendum non metus et tempus. Pellentesque cursus arcu ipsum. Sed mollis lacus nisi, ut bibendum lectus pharetra sed. Fusce ipsum neque, feugiat quis efficitur id, malesuada a risus. Fusce in sodales eros, a viverra nisl.</p>
+    <p>Sed nec ante vel tellus venenatis dignissim ut in nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque sapien ipsum, rhoncus imperdiet vestibulum eget, tincidunt vel lectus. Phasellus volutpat consectetur justo. Etiam quis ultricies nisl. Nunc efficitur, orci porta pulvinar faucibus, eros ex elementum nibh, id fermentum tellus magna eget enim. Maecenas tristique nunc vel erat maximus mattis. Donec quis odio augue. Pellentesque eget vulputate metus.</p>
+    <p>Nulla sed ex et neque dictum pellentesque eu cursus turpis. Proin hendrerit orci non enim aliquam consequat. Donec facilisis posuere molestie. Nullam gravida sapien et magna tempus, a ultricies purus feugiat. Fusce varius velit lorem, vel lacinia ipsum varius vel. Curabitur sed arcu sit amet lacus vulputate auctor a eu erat. Suspendisse potenti. Fusce eget feugiat metus. Proin pellentesque blandit fringilla. Sed ac tortor id libero vehicula varius. Nullam in sodales lorem, ut hendrerit enim. Aenean tempus faucibus urna non lobortis. Suspendisse lacinia enim vel tincidunt dapibus. Ut vitae nisi in diam tempor aliquet.</p>
+  </section>
+</main>
 
+</div><!--wrapper-->
 
 <script>
 /* Global Async */
 function init() {
-  // ASYNC
-  console.log('async');
-  'use strict';
-var toggles = document.querySelectorAll('[data-menu]');
-//console.log(toggles);
+    // ASYNC
+    console.log('async');
+    'use strict';
 
-function run_toggle(content) {
-  //console.log(content);
-  // var show = function (content) { content.style.display = 'block'; };
-  // var hide = function (content) { content.style.display = 'none'; };
-  var show = function (content) { 
-    //   content.style.left = '0';
-      content.classList.add('open');
-  };
-  var hide = function (content) { 
-    //   content.style.left = '100%';
-      content.classList.remove('open'); 
-  };
-  var toggle_status = content.getAttribute('data-menu_state');;
-  // if (window.getComputedStyle(content).left === '0') {
-  if (toggle_status === 'open') {
-      content.setAttribute('data-menu_state', 'closed');
-      hide(content);
-      return;
-  }
-  content.setAttribute('data-menu_state', 'open');
-  show(content);
+var nav_icon = document.getElementById("primary_nav_icon");
+var primary_nav = document.getElementById("primary_nav");
+
+// detect viewport width and set for mobile or regular nav
+var viewportWidth = window.innerWidth || document.documentElement.clientWidth; //console.log(viewportWidth);
+if (viewportWidth > 640) {
+    nav_icon.classList.add("desktop");
+    primary_nav.classList.add("desktop");
+}
+
+var toggles = document.querySelectorAll('[data-menu]'); //console.log(toggles);
+function run_toggle(content, button) {
+    // if is primary nav, then change the menu icon
+    if ( content.id === "primary_nav" ) {
+        var nav_icon = document.getElementById("primary_nav_icon");
+        if ( nav_icon.classList.contains("closed") ) {
+            nav_icon.classList.remove("closed");
+            nav_icon.classList.add("open");
+        } else {
+            nav_icon.classList.add("closed");
+            nav_icon.classList.remove("open");
+        }
+    }
+    // this is for all other toggles on page, including secondary nav
+    var toggle_status = content.getAttribute('data-menu_state');;
+    if (toggle_status === 'open') {
+        // hide the content
+        content.setAttribute('data-menu_state', 'closed');
+        content.classList.remove('open');
+        button.classList.remove('open');
+        return;
+    }
+    // show the content
+    content.setAttribute('data-menu_state', 'open');
+    content.classList.add('open');
+    button.classList.add('open');
 }
 
 Object.keys(toggles).forEach(function(key) {
-  var toggle = toggles[key];
-  var target = toggle.getAttribute("data-menu");
-//   console.log('target', target);
-//   console.log('toggle', toggle);
-  toggle.addEventListener("click", function (toggle) {
-      //if (!event.target.classList.contains('toggle')) return;
-      event.preventDefault();
-      // var target = toggle.getAttribute("data-menu");
-      //console.log('target', target);
-      // var content = document.querySelector(event.target.hash);
-      var content = document.querySelector("#"+target);
-      var button = event.target;
-      console.log(button);
-      if (!content) return;
-      run_toggle(content);
-        console.log(event.target.className);
-      if (event.target.className === 'icon-expand') {
-        event.target.classList.add('close');
-      }
-      //event.target.classList.toggle('menu-opened');
+    var toggle = toggles[key];
+    var target_id = toggle.getAttribute("data-menu");
+    toggle.addEventListener("click", function (toggle) {
+        //if (!event.target.classList.contains('toggle')) return;
+        event.preventDefault();
+        // var target = toggle.getAttribute("data-menu");
+        //console.log('target', target);
+        // var content = document.querySelector(event.target.hash);
+        var content = document.querySelector("#"+target_id);
+        var button = event.target;
+        //  console.log(button);
+        if (!content) return;
+        run_toggle(content, button);
 
-  });
+        
+        // console.log(event.target.className);
+        // if (event.target.className === 'icon-expand') {
+        //   event.target.classList.add('close');
+        // }
+        //event.target.classList.toggle('menu-opened');
+    });
 });
 
 
-
-}
+} // end init
 if (window.addEventListener) window.addEventListener("load", init, false);
 else if (window.attachEvent) window.attachEvent("onload", init);
 else window.onload = init;
 </script>
+
+<!-- https://van11y.net/downloads/hide-show/demo/index.html -->
 
 </body>
 </html>

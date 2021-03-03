@@ -1,10 +1,12 @@
 body { font-family: $font-text; line-height:1; }
 
 .wrapper { width:100%; margin:0 auto; max-width:100%; }
+main { margin:3rem 0; }
 .content { 
     width:100%;
     margin:0 auto;
     padding:0 2rem;
+    p { margin-top:1rem; margin-bottom:1rem; }
     &.wide { 
         p, ol, ul,
         h1, h2, h3, h4, h5 { max-width:$reading_max_wide; margin-left:auto; margin-right:auto }

@@ -1,5 +1,5 @@
 function setup_nav() {
-    console.log('setup_nav');
+    //console.log('setup_nav');
     //https://codepen.io/escherina/pen/pyxYqz
     var nav = document.querySelector("#nav"),
         navToggle = document.querySelector("#menu");
