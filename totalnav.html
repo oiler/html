@@ -28,26 +28,24 @@
 </head>
 <body>
 
-<div class="wrapper">
-<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="32" viewBox="0 0 128 32">
-    <defs>
-    <g id="icon-expand">
-        <path class="menu-open menu-opened" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-    </g>
-    <g id="icon-contract">
-        <path class="menu-close" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-    </g>
-    </defs>
-</svg>
+<div class="wrapper" id="top">
+
 
 <header>
-  <h1>Page Title</h1>
-  <div class="menu-icon closed" data-menu="primary_nav" id="primary_nav_icon">
+  <h1><a href="" tabindex="0">Page Title</a></h1>
+  <button class="menu-icon closed" data-menu="primary_nav" id="primary_nav_icon" tabindex="-1" aria-controls="menu" aria-label="Site Menu">
     <svg class="icon icon-expand" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><use xlink:href="#icon-expand"></svg>
     <svg class="icon icon-contract" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><use xlink:href="#icon-contract"></use></svg>
-  </div>
+    </button>
 </header>
-<nav class="menu" id="primary_nav" data-menu_state="closed">
+<nav 
+  class="menu"
+  id="primary_nav"
+  data-menu_state="closed" 
+  aria-label="Primary Navigation"
+  aria-hidden="true"
+  
+>
   <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
@@ -72,6 +70,17 @@
     <li><a href="#">Item 10</a></li> -->
   </ul>
 </nav>
+
+<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="32" viewBox="0 0 128 32">
+  <defs>
+  <g id="icon-expand">
+      <path class="menu-open menu-opened" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+  </g>
+  <g id="icon-contract">
+      <path class="menu-close" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+  </g>
+  </defs>
+</svg>
 
 <main>
   <section class="content">
@@ -110,9 +119,25 @@ function init() {
 var nav_icon = document.getElementById("primary_nav_icon");
 var primary_nav = document.getElementById("primary_nav");
 
-// detect viewport width and set for mobile or regular nav
+
+var isMobile = function isMobile() {
+  if( navigator.userAgent.match(/Android/i)
+  || navigator.userAgent.match(/webOS/i)
+  || navigator.userAgent.match(/iPhone/i)
+  || navigator.userAgent.match(/iPad/i)
+  || navigator.userAgent.match(/iPod/i)
+  || navigator.userAgent.match(/BlackBerry/i)
+  || navigator.userAgent.match(/Windows Phone/i) ) {
+    //alert("You're using Mobile Device!!")
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// nav is mobile by default, this detects viewport width and sets for desktop
 var viewportWidth = window.innerWidth || document.documentElement.clientWidth; //console.log(viewportWidth);
-if (viewportWidth > 640) {
+if (viewportWidth > 640 && !isMobile()) {
     nav_icon.classList.add("desktop");
     primary_nav.classList.add("desktop");
 }
