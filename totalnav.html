@@ -26,7 +26,7 @@
 
 
 </head>
-<body>
+<body class="no-js">
 
 <div class="wrapper" id="top">
 
@@ -114,6 +114,7 @@
 function init() {
     // ASYNC
     console.log('async');
+    document.body.classList.remove("no-js");
     'use strict';
 
 var nav_icon = document.getElementById("primary_nav_icon");
