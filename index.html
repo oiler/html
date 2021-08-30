@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="build/css/styles.css" type="text/css">
     <style type="text/css">
       /* critical css */
+      .modal { opacity: 0; visibility: hidden; }
+
     </style>
     <!-- http://ogp.me/ -->
     <meta property="og:title" content="" />
@@ -94,6 +96,9 @@
   <h2>Page Subhead</h2>
   <p><img class="inline-left" src="./assets/img/zachary-shakked-UvOvE9-aIqI-unsplash.jpg"></p>
   <p class="">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. <a href="https://unsplash.com/s/photos/copenhagen">She packed her seven versalia, put her initial into the belt and made herself on the way</a>. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek.</p>
+  <p class="center vertical-center">
+    <button class="button" data-modal="modal-one">Open Modal</button>
+  </p>
 </div>
 <div class="fullwidth section content narrow bg_dark">
   <h3>Another Page Subhead</h3>
@@ -140,6 +145,20 @@
   </ol>
 </div>
 
+
+
+  <a data-modal="modal-one">Open Modal</a>
+
+<div class="modal" id="modal-one">
+  <div class="modal-bg modal-exit"></div>
+  <div class="modal-container">
+    <h1>Amazing Modal</h1>
+    <h2>Pure Vanilla JavaScript</h2>
+    <button class="modal-close modal-exit">X</button>
+  </div>
+</div>
+
+
   <div class="footer">
     <div class="nav">
       <a href="/home">Home</a>
@@ -171,6 +190,7 @@
     function init() {
       // ASYNC
       console.log('async');
+      document.body.classList.remove("no-js");
     }
     if (window.addEventListener) window.addEventListener("load", init, false);
     else if (window.attachEvent) window.attachEvent("onload", init);
