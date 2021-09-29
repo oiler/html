@@ -1,0 +1,43 @@
+@if $use_custom__text {
+    //BODY
+    html, body { font-size:1rem; }
+
+    //HEADERS
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $font_head;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        margin:0;
+        padding:0;
+    }
+    h1 { font-size: 6rem; line-height: 1; margin-bottom: 30px; }
+    h2 { font-size: 4rem; line-height: 1; margin-bottom: 30px; }
+    h3 { font-size: 3rem; line-height: 1.1; margin-bottom: 30px; }
+    h4 { font-size: 2.25rem; line-height: 1.2; margin-bottom: 30px; }
+    h5 { font-size: 1.875rem; line-height: 1.3; margin-bottom: 20px; }
+    h6 { font-size: 1.5rem; line-height: 1.4; margin-bottom: 16px; }
+
+    @media ( min-width: $device_desktop ) {
+        h1 { font-size: 8rem }
+        h2 { font-size: 6rem }
+        h3 { font-size: 4rem }
+        h4 { font-size: 3rem }
+        h5 { font-size: 2.25rem }
+        h6 { font-size: 1.875rem }
+    }
+
+    //TEXT
+    p, ol, ul {
+        font-family: $font_text;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        margin:0;
+        padding:0;
+        font-size: 1.25rem;
+        line-height: 1.35;
+    }
+}

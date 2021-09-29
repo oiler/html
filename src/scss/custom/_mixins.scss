@@ -1,0 +1,22 @@
+@if $use_custom__mixins {
+    @mixin small-breakpoint {
+        @media only screen and (max-width: $device_mobile) {
+            @content;
+        }
+    }
+    @mixin medium-breakpoint {
+    @media only screen and (max-width: $device_tablet) {
+        @content;
+    }
+    }
+    @mixin medium-breakpoint-only {
+        @media only screen and (min-width: $device_mobile) and (max-width: $device_tablet) {
+            @content;
+        }
+    }
+    @mixin large-breakpoint {
+        @media only screen and (min-width: $device_desktop) {
+            @content;
+        }
+    }
+}

@@ -1,3 +1,4 @@
+@import 'config';
 /** RESET **/
 @import 'vendor/normalize';
 
@@ -5,7 +6,6 @@
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/colors';
-@import 'custom/colors';
 @import 'base/fonts';
 @import 'base/sizespaces';
 @import 'base/text';
@@ -14,16 +14,16 @@
 
 
 /** COMPONENTS **/
-@import 'components/buttons';
+// @import 'components/buttons';
 // @import 'components/cards';
 // @import 'components/forms';
-@import 'components/modal';
+// @import 'components/modal';
 
 /** LAYOUT **/
-@import 'layout/nav';
-@import 'layout/mobile';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/content';
-@import 'layout/desktop';
+// @import 'layout/nav';
+// @import 'layout/mobile';
+// @import 'layout/header';
+// @import 'layout/footer';
+// @import 'layout/content';
+// @import 'layout/desktop';
 
