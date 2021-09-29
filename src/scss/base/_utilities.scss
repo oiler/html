@@ -55,6 +55,8 @@ a { color:inherit; text-decoration:none; }
 .text-giant { font-size: $font_giant; } //48
 .text-head { font-family: $font_head; }
 .text-text { font-family: $font_text; }
+.text-black { color:$black; }
+.text-white { color:$white; }
 
 .toggle-content { display: none; }
 .toggle-content.is-visible { display: block; }

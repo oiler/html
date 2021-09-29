@@ -9,76 +9,76 @@ $green:        hsla(120, 100%, 25%, 1); //#008000
 $action_primary: hsla(0, 100%, 50%, 1); //#ff0000
 $action_secondary: hsla(240, 100%, 50%, 1); //#0000ff
 
+$gray_100:     hsla(204, 45%, 98%, 1); //#f7fafc
+$gray_200:     hsla(210, 38%, 95%, 1); //#edf2f7
+$gray_300:     hsla(214, 32%, 91%, 1); //#e2e8f0
+$gray_400:     hsla(211, 25%, 84%, 1); //#cbd5e0
+$gray_500:     hsla(214, 20%, 69%, 1); //#a0aec0
+$gray_600:     hsla(216, 15%, 52%, 1); //#718096;
+$gray_700:     hsla(218, 17%, 35%, 1); //#4a5568;
+$gray_800:     hsla(218, 23%, 23%, 1); //#2d3748;
+$gray_900:     hsla(220, 26%, 14%, 1); //#1a202c;
+$gray_shades: (
+    100:$gray_100,200:$gray_200,300:$gray_100,400:$gray_100,500:$gray_100,
+    600:$gray_100,700:$gray_100,800:$gray_100,900:$gray_100
+);
 @if $use_base__colors_grays {
-    $gray_100:     hsla(204, 45%, 98%, 1); //#f7fafc
-    $gray_200:     hsla(210, 38%, 95%, 1); //#edf2f7
-    $gray_300:     hsla(214, 32%, 91%, 1); //#e2e8f0
-    $gray_400:     hsla(211, 25%, 84%, 1); //#cbd5e0
-    $gray_500:     hsla(214, 20%, 69%, 1); //#a0aec0
-    $gray_600:     hsla(216, 15%, 52%, 1); //#718096;
-    $gray_700:     hsla(218, 17%, 35%, 1); //#4a5568;
-    $gray_800:     hsla(218, 23%, 23%, 1); //#2d3748;
-    $gray_900:     hsla(220, 26%, 14%, 1); //#1a202c;
-    $gray_shades: (
-        100:$gray_100,200:$gray_200,300:$gray_100,400:$gray_100,500:$gray_100,
-        600:$gray_100,700:$gray_100,800:$gray_100,900:$gray_100
-    );
     @each $shade, $color in $gray_shades {
         .gray_#{$shade} { color: $color; }
         .bg_gray_#{$shade} { background-color: $color; }
     } 
 }
 
+$neutral_100: hsla(210, 17%, 98%, 1); //#f8f9fa
+$neutral_200: hsla(207, 22%, 90%, 1); //#e1e7ec
+$neutral_300: hsla(210, 24%, 87%, 1); //#d5dde5
+$neutral_400: hsla(208, 17%, 83%, 1); //#ccd4db
+$neutral_500: hsla(209, 22%, 74%, 1); //#afbecc
+$neutral_600: hsla(214, 16%, 63%, 1); //#929fb0
+$neutral_700: hsla(213, 11%, 48%, 1); //#6e7a89
+$neutral_800: hsla(214, 16%, 30%, 1); //#404b59
+$neutral_900: hsla(215, 22%, 17%, 1); //#212934
+$neutral_shades: ( 
+    100:$neutral_100,200:$neutral_200,300:$neutral_300,400:$neutral_400,500:$neutral_500,
+    600:$neutral_600,700:$neutral_700,800:$neutral_800,900:$neutral_900
+);
 @if $use_base__colors_neutrals {
-    $neutral_100: hsla(210, 17%, 98%, 1); //#f8f9fa
-    $neutral_200: hsla(207, 22%, 90%, 1); //#e1e7ec
-    $neutral_300: hsla(210, 24%, 87%, 1); //#d5dde5
-    $neutral_400: hsla(208, 17%, 83%, 1); //#ccd4db
-    $neutral_500: hsla(209, 22%, 74%, 1); //#afbecc
-    $neutral_600: hsla(214, 16%, 63%, 1); //#929fb0
-    $neutral_700: hsla(213, 11%, 48%, 1); //#6e7a89
-    $neutral_800: hsla(214, 16%, 30%, 1); //#404b59
-    $neutral_900: hsla(215, 22%, 17%, 1); //#212934
-    $neutral_shades: ( 
-        100:$neutral_100,200:$neutral_200,300:$neutral_300,400:$neutral_400,500:$neutral_500,
-        600:$neutral_600,700:$neutral_700,800:$neutral_800,900:$neutral_900
-    );
     @each $shade, $color in $neutral_shades {
         .neutral_#{$shade} { color: $color; }
         .bg_neutral_#{$shade} { background-color: $color; }
     }
 }
 
+$wb_100:     hsla(0, 0%, 94%, 1); //#f0f0f0
+$wb_200:     hsla(0, 0%, 85%, 1); //#d9d9d9
+$wb_300:     hsla(0, 0%, 79%, 1); //#c8c8c8
+$wb_500:     hsla(0, 0%, 72%, 1); //#b7b7b7
+$wb_700:     hsla(0, 0%, 65%, 1); //#a6a6a6
+$wb_800:     hsla(0, 0%, 58%, 1); //#949494
+$wb_900:     hsla(0, 0%, 50%, 1); //#808080
+$wb_shades: (
+    100:$wb_100,200:$wb_200,300:$wb_300,500:$wb_500,
+    700:$wb_700,800:$wb_800,900:$wb_900
+);
 @if $use_base__colors_wbs {
-    $wb_100:     hsla(0, 0%, 94%, 1); //#f0f0f0
-    $wb_200:     hsla(0, 0%, 85%, 1); //#d9d9d9
-    $wb_300:     hsla(0, 0%, 79%, 1); //#c8c8c8
-    $wb_500:     hsla(0, 0%, 72%, 1); //#b7b7b7
-    $wb_700:     hsla(0, 0%, 65%, 1); //#a6a6a6
-    $wb_800:     hsla(0, 0%, 58%, 1); //#949494
-    $wb_900:     hsla(0, 0%, 50%, 1); //#808080
-    $wb_shades: (
-        100:$wb_100,200:$wb_200,300:$wb_300,500:$wb_500,
-        700:$wb_700,800:$wb_800,900:$wb_900
-    );
     @each $shade, $color in $wb_shades {
         .wb_#{$shade} { color: $color; }
         .bg_wb_#{$shade} { background-color: $color; }
     } 
 }
 
+$bw_100:     hsla(0, 0%, 44%, 1); //#707070
+$bw_200:     hsla(0, 0%, 38%, 1); //#616161
+$bw_300:     hsla(0, 0%, 32%, 1); //#525252
+$bw_500:     hsla(0, 0%, 26%, 1); //#424242
+$bw_700:     hsla(0, 0%, 20%, 1); //#333333
+$bw_800:     hsla(0, 0%, 16%, 1); //#292929
+$bw_900:     hsla(0, 0%, 9%, 1); //#171717
+$bw_shades: (
+    100:$bw_100,200:$bw_200,300:$bw_300,500:$bw_500,
+    700:$bw_700,800:$bw_800,900:$bw_900
+);
 @if $use_base__colors_bws {
-    $bw_100:     hsla(0, 0%, 44%, 1); //#707070
-    $bw_200:     hsla(0, 0%, 38%, 1); //#616161
-    $bw_300:     hsla(0, 0%, 32%, 1); //#525252
-    $bw_500:     hsla(0, 0%, 26%, 1); //#424242
-    $bw_700:     hsla(0, 0%, 20%, 1); //#333333
-    $bw_800:     hsla(0, 0%, 16%, 1); //#292929
-    $bw_900:     hsla(0, 0%, 9%, 1); //#171717
-    $bw_shades: (
-        100:$bw_100,200:$bw_200,300:$bw_300,500:$bw_500,
-        700:$bw_700,800:$bw_800,900:$bw_900
-    );
     @each $shade, $color in $bw_shades {
         .bw_#{$shade} { color: $color; }
         .bg_bw_#{$shade} { background-color: $color; }
