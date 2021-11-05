@@ -7,9 +7,13 @@
     ```bash
     npm run build-css
     ```
-* Compile other files into their own build by passing a value for the variable: `f`
+* Compile other global files into their own build by passing a value for the variable: `f`
     ```bash
     f=print npm run build-css
+    ```
+* Create page specific files
+    ```bash
+    f=./pages/subpage npm run build-css
     ```
 * Options ([src](https://github.com/sass/node-sass/blob/master/bin/node-sass#L37)):
     ```
